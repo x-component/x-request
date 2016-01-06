@@ -1,0 +1,21 @@
+{
+	"name"    : "x-request",
+	"version" : "1.0.0",
+	"license" : "MIT",
+	"dependencies" : {
+		"request"  : "latest",
+		"retry"    : "latest",
+		"x-common" : "1.x.x",
+		"x-log"    : "1.x.x"
+	},
+	"devDependencies":{
+		"x-publish": "1.x.x",
+		"express" : "latest",
+		"vows"    : "latest"
+	},
+	"main" : "request.js",
+	"scripts": {
+		"prepublish": "./node_modules/x-publish/scripts/prepublish.sh",
+		"test"       : "vows ./test/*.test.js"
+	}
+}
